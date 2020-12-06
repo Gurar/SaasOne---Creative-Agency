@@ -3,7 +3,7 @@
 ![Gluten Status](https://img.shields.io/badge/Gluten-Free-green.svg)
 ![Eco Status](https://img.shields.io/badge/ECO-Friendly-green.svg)
 
-# Saas-one
+# SaasOne — Creative Agency, Corporate and Portfolio Multi-purpose Template
 ### personal website project
 
 This project is for educational porpuses only.
