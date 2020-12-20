@@ -1,0 +1,54 @@
+.header {
+   padding: 30px 0;
+}
+
+    .navbar {
+       display: flex; 
+       justify-content: space-between;
+       align-items: center;
+       &__right {
+           display: flex;
+           align-items: center;
+       }
+
+       &__nav {
+           display: none;
+           @include breakpoint(md) {
+               display: block;
+           }
+           &-link {
+               display: inline-block;
+               font-size: 1.5rem;
+               font-weight: 600;
+               color: $mainColor;
+               margin: 0 23px;
+               &:first-of-type {
+                   margin-left: 0;
+               }
+               &:last-of-type {
+                   margin-right: 0;
+               }
+           }
+       }
+
+       &__btn {
+           margin-left: 50px;
+           border: 2px solid transparent;
+           box-shadow: 0 20px 30px 0 rgba(79,35,35,.15);
+           display: none;
+           @include breakpoint(md) {
+               display: inline-block;
+           }
+       }
+    }
+
+    .menu {
+        &--disable {
+            display: block;
+            @include breakpoint(md) {
+                display: none;
+            }
+        }
+    }
+
+    @import './burger';

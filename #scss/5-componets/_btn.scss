@@ -1,0 +1,24 @@
+.btn {
+    display: inline-block;
+    font-size:  1.4rem;
+    font-weight: 700;
+    padding: 8px 30px;
+    border-radius: 4px;
+    color: #fff;
+    line-height: 28px;
+    transition: all .2s ease-in-out;
+}
+
+.btn:hover {
+    background-color: $purple;
+    color: #fff;
+}
+
+.btn--primary {
+    background-color: $purple;
+}
+
+.btn--secondary {
+    background-color: #fff;
+    color: $purple;
+}

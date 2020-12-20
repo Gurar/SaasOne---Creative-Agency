@@ -1,20 +1,16 @@
-$burgerColor: #fff;
+$burgerColor: $mainColor;
 $burgerCloseColor: #fff;
 $burgerBackground: transparent;
+$burgerBorderColor: #fff;
 
 .burger {
-	display: inline-block;
-	position: absolute;
-	right: 0;
-	top: 0;
-	overflow: hidden;
-	margin: 0;
-	padding: 0;
+    display: inline-block;
+    position: relative;
 	width: 52px;
 	height: 52px;
 	font-size: 0;
 	cursor: pointer;
-	border: 1px solid #f3bd00;
+	border: 1px solid $burgerBorderColor;
     z-index: 999;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.17);
     &:focus {
@@ -70,7 +66,7 @@ $burgerBackground: transparent;
                 transition-property: bottom, transform; 
             }
         }
-        &.active {
+        &.isactive {
             span {
                 background: transparent;
 
