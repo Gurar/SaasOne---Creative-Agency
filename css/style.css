@@ -8270,21 +8270,36 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
+@media screen and (max-width: 992px) {
+  .navbar {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 .navbar__right {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  width: 100%;
+}
+
+@media screen and (min-width: 992px) {
+  .navbar__right {
+    width: auto;
+    margin-left: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .navbar__nav {
@@ -8313,6 +8328,10 @@ html {
   margin-right: 0;
 }
 
+.navbar__nav-link:hover {
+  color: #7052fb;
+}
+
 .navbar__btn {
   margin-left: 50px;
   border: 2px solid transparent;
@@ -8327,12 +8346,12 @@ html {
   }
 }
 
-.menu--disable {
-  display: block;
+.menu {
+  display: inline-block;
 }
 
 @media screen and (min-width: 992px) {
-  .menu--disable {
+  .menu {
     display: none;
   }
 }

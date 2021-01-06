@@ -26,6 +26,15 @@ $breakpoints: (
 	
 }
 
+@mixin maxMedia($size){
+	$breakpoint-value: map-get($breakpoints, $size);
+
+	@media screen and (max-width: $breakpoint-value) {
+		@content;
+	}
+	
+}
+
 @mixin breakpointBetween($lower, $upper) {
 	$lower-breakpoint: map-get($breakpoints, $lower);
 	$upper-breakpoint: map-get($breakpoints, $upper);
