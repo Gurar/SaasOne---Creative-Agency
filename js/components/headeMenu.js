@@ -16,15 +16,7 @@ function headerMenu(selector) {
         e.preventDefault();
         DOM.classList.toggle('active');
 
-        const headerSelector = document.querySelector('.header');
-
-        if(!Validator.isValidSelector(headerSelector)) {
-            return false;
-        }
-
-        headerSelector.classList.toggle('header--heigth');
-
-        const headerNavbarSelector = headerSelector .querySelector('.navbar__right');
+        const headerNavbarSelector = document .querySelector('.header .navbar__right');
 
         if(!Validator.isValidSelector(headerNavbarSelector)) {
            return false;
