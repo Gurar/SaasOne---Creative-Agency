@@ -1,15 +1,29 @@
 .header {
     padding: 20px 0;
+    background-color: #fff;
+    box-shadow: 0 10px 20px 0 rgba(79,35,35,.08);
+    @include breakpoint(md) {
+        padding: 30px 0;
+        background-color: transparent;
+        box-shadow: none;
+    }
     &--fixed {
         position: fixed;
         top: 0;
         left: 0;
         right: 0;
         z-index: 2;
+        box-shadow: 0 10px 20px 0 rgba(79,35,35,.08);
+        animation: p .65s cubic-bezier(.23,1,.32,1) both;
+        padding: 18px;
     }
-    
-    @include breakpoint(md) {
-            padding: 30px 0;
+}
+
+.logo {
+    margin-top: 2px;
+    &__image {
+       max-width: 100%;
+       height: auto;
     }
 }
 
@@ -91,6 +105,7 @@
 
     .menu {
         display: inline-block;
+        margin-top: -2px;
         margin-right: -13px;
         @include breakpoint(md) {
             display: none;
