@@ -8266,6 +8266,14 @@ html {
   padding: 20px 0;
 }
 
+.header--fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
 @media screen and (min-width: 992px) {
   .header {
     padding: 30px 0;
@@ -8455,21 +8463,30 @@ html {
 }
 
 .burger-line > span {
+  -webkit-transition: background 0s 0.3s;
   transition: background 0s 0.3s;
 }
 
 .burger-line > span::before,
 .burger-line > span::after {
-  transition-duration: 0.3s, 0.3s;
-  transition-delay: 0.3s, 0s;
+  -webkit-transition-duration: 0.3s, 0.3s;
+          transition-duration: 0.3s, 0.3s;
+  -webkit-transition-delay: 0.3s, 0s;
+          transition-delay: 0.3s, 0s;
 }
 
 .burger-line > span::before {
+  -webkit-transition-property: top, -webkit-transform;
+  transition-property: top, -webkit-transform;
   transition-property: top, transform;
+  transition-property: top, transform, -webkit-transform;
 }
 
 .burger-line > span::after {
+  -webkit-transition-property: bottom, -webkit-transform;
+  transition-property: bottom, -webkit-transform;
   transition-property: bottom, transform;
+  transition-property: bottom, transform, -webkit-transform;
 }
 
 .burger-line.active span {
@@ -8478,18 +8495,21 @@ html {
 
 .burger-line.active span::before {
   top: 0;
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
   background-color: --var(--burgerClose);
 }
 
 .burger-line.active span::after {
   bottom: 0;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
   background-color: --var(--burgerClose);
 }
 
 .burger-line.active span::before,
 .burger-line.active span::after {
-  transition-delay: 0s, 0.3s;
+  -webkit-transition-delay: 0s, 0.3s;
+          transition-delay: 0s, 0.3s;
 }
 /*# sourceMappingURL=style.css.map */

@@ -27,7 +27,6 @@ function headerMenu(selector) {
         window.addEventListener('click', (event) => {
             if(event.target.tagName.toLowerCase() === 'a') {
                 DOM.classList.remove('active');
-                headerSelector.classList.remove('header--heigth');
                 headerNavbarSelector.classList.remove('open');
             }
         });
