@@ -8,7 +8,7 @@
 
 This project is for educational porpuses only.
 
-Site published at https://gurar.github.io/SaasOne---Creative-Agency/dist/
+Site published at https://gurar.github.io/SaasOne---Creative-Agency/
 
 Design: [Saas-one](https://altrcloud.ru/saasone/index-two)
 
