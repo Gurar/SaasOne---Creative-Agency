@@ -1,5 +1,5 @@
 .header {
-    padding: 20px 0;
+    padding: 18px 0;
     background-color: #fff;
     box-shadow: 0 10px 20px 0 rgba(79,35,35,.08);
     @include breakpoint(md) {
@@ -19,6 +19,10 @@
     }
 }
 
+.header > * {
+    margin-bottom: 5%;
+}
+
 .logo {
     margin-top: 2px;
     &__image {
@@ -33,6 +37,7 @@
         align-items: center;
         @include maxMedia(md) {
             justify-content: space-between;
+
         }
 
         &__right {

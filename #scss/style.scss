@@ -1,31 +1,23 @@
 //1 - TOOLS
 //font awesome
-@import '1-tools/fontawesome/_fontawesome';
-@import '1-tools/fontawesome/_solid';
-@import '1-tools/fontawesome/_brands';
-@import '1-tools/fontawesome/_regular';
+@import '1-tools/fontawesome/fontawesome';
+@import '1-tools/fontawesome/solid';
+@import '1-tools/fontawesome/brands';
+@import '1-tools/fontawesome/regular';
 
 //2 - HELPERS
-@import '2-helpers/_variables';
-@import '2-helpers/_mixins';
+@import '2-helpers/variables';
+@import '2-helpers/mixins';
 
 //3 - BASICS
-@import '3-basic/_basic';
+@import '3-basic/basic';
 
 //4 - LAYOUT
-@import '4-layout/_layout';
+@import '4-layout/layout';
 
 //5 - COMPONENTS
-@import '5-componets/_btn';
-@import '5-componets/_header';
+@import '5-components/btn';
+@import '5-components/header';
 
 //6 - PAGE 
-@import '6-page/_index';
-
-
-
-
-
-
-
-
+@import '6-page/home';
