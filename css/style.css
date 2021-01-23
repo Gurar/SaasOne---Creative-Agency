@@ -8225,7 +8225,7 @@ html {
 }
 
 .header {
-  padding: 18px 0;
+  padding: 5px 0;
   background-color: #fff;
   box-shadow: 0 10px 20px 0 rgba(79, 35, 35, 0.08);
 }
@@ -8246,11 +8246,13 @@ html {
   z-index: 2;
   box-shadow: 0 10px 20px 0 rgba(79, 35, 35, 0.08);
   animation: p 0.65s cubic-bezier(0.23, 1, 0.32, 1) both;
-  padding: 18px;
+  background-color: #fff;
 }
 
-.header > * {
-  margin-bottom: 5%;
+@media screen and (min-width: 992px) {
+  .header--fixed {
+    padding: 18px;
+  }
 }
 
 .logo {
@@ -8466,6 +8468,26 @@ html {
   transition-delay: 0s, 0.3s;
 }
 
+.hero {
+  margin-top: 8vh;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    margin-top: 7vh;
+  }
+}
+
+.hero__content {
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__content {
+    margin-bottom: 0;
+  }
+}
+
 .hero__discount {
   display: inline-block;
   font-size: 1.6rem;
@@ -8484,11 +8506,18 @@ html {
 }
 
 .hero__title {
-  font-size: 5.6rem;
+  font-size: 4rem;
   font-weight: 400;
   color: #2b2350;
-  line-height: 70px;
+  line-height: 50px;
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 5.6rem;
+    line-height: 70px;
+  }
 }
 
 .hero__description {
@@ -8509,5 +8538,23 @@ html {
 
 .hero__btn:first-of-type {
   margin-right: 20px;
+}
+
+@media (max-width: 360px) and (orientation: portrait) {
+  .hero__btn {
+    padding: 8px 10px !important;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .hero__items {
+    width: 650px;
+  }
+}
+
+.hero__image {
+  max-width: 100%;
+  border-radius: 4px;
+  box-shadow: 0 30px 60px 0 rgba(0, 11, 40, 0.14);
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,5 +1,5 @@
 .header {
-    padding: 18px 0;
+    padding: 5px 0;
     background-color: #fff;
     box-shadow: 0 10px 20px 0 rgba(79,35,35,.08);
     @include breakpoint(md) {
@@ -15,12 +15,11 @@
         z-index: 2;
         box-shadow: 0 10px 20px 0 rgba(79,35,35,.08);
         animation: p .65s cubic-bezier(.23,1,.32,1) both;
-        padding: 18px;
+        background-color: #fff;
+        @include breakpoint(md) {
+            padding: 18px; 
+        }
     }
-}
-
-.header > * {
-    margin-bottom: 5%;
 }
 
 .logo {

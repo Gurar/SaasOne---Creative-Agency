@@ -1,4 +1,16 @@
 .hero {
+    margin-top: 8vh;
+    @include breakpoint(lg) {
+        margin-top: 7vh;
+    }
+    
+    &__content {
+        margin-bottom: 50px;
+        @include breakpoint(lg) {
+            margin-bottom: 0;
+        }
+    }
+
     &__discount {
         display: inline-block;
         font-size: 1.6rem;
@@ -16,11 +28,15 @@
     }
 
     &__title {
-        font-size: 5.6rem;
+        font-size: 4rem;
         font-weight: 400;
         color: #2b2350;
-        line-height: 70px;
+        line-height: 50px;
         margin-bottom: 20px;
+        @include breakpoint(lg) {
+            font-size: 5.6rem;
+            line-height: 70px;
+        }
     }
 
     &__description {
@@ -40,5 +56,23 @@
         &:first-of-type {
             margin-right: 20px;
         }
+
+        @media (max-width: 360px) and (orientation:portrait) {
+            padding: 8px 10px !important ; 
+        }
+
+    }
+
+
+    &__items {
+        @include breakpoint(xl) {
+            width: 650px;   
+        }
+    }
+
+    &__image {
+        max-width: 100%;
+        border-radius: 4px;
+        box-shadow: 0 30px 60px 0 rgba(0,11,40,0.14);
     }
 }
