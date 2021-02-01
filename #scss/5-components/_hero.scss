@@ -6,7 +6,7 @@
     
     &__content {
         margin-bottom: 50px;
-        @include breakpoint(lg) {
+        @include breakpoint(md) {
             margin-bottom: 0;
         }
     }
